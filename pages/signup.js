@@ -87,7 +87,9 @@ const signup = () => {
               </div>
 
               <div style={{ background: 'rgba(218, 61, 38, 0.47) ', borderRadius: '20px' }}>
-                <input type="submit" style={{ background: 'rgba(218, 61, 38, 0.47)', color: 'white' }} value="Continue" />
+              <a href='signup2'>
+                <input type="button" style={{ background: 'rgba(218, 61, 38, 0.47)', color: 'white' }} value="Continue" />
+                </a>
               </div>
             </form>
           </div>
