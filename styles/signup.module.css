@@ -12,7 +12,7 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 40px;
   width: 491px;
   gap: 20px;
   border-radius: 20px;
@@ -181,8 +181,14 @@
   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"%3E%3Cpath d="M13.3327 8.3335L9.99935 11.6668L6.66602 8.3335" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E') !important;
   background-repeat: no-repeat !important;
   background-size: cover;
-  background-position:  right 10px center !important;
+  background-position:  left 55px center !important;
   border-color: rgba(193, 190, 190, 0.33) !important;
+ 
+}
+.FormSelect:focus{
+  color: #212529;
+  outline: 0 !important;
+  box-shadow: none !important;
 }
 
 .FormControl:invalid{
@@ -198,6 +204,7 @@ display: flex;
 justify-content: center;
 
 }
+
 
 
 

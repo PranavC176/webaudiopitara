@@ -179,7 +179,7 @@ const Signup = () => {
             
                   <Form.Group as={Col} md="2" controlId="validationCustom03">
         <Form.Select aria-label="Default select example" className={[styles.FormControl,styles.FormSelect]}
-        style={{borderRadius:'6px 0 0 6px  !important',borderRight:'none',padding:'8px 0px 8px 20px !important',backgroundImage:'none !important'}}
+        style={{borderRadius:'6px 0 0 6px  !important',borderRight:'none',padding:'8px 20px 20px 20px !important'}}
           >
       <option style={{background:' black'}} >+91</option>
       <option value="1" style={{background:' black'}}>One</option>
