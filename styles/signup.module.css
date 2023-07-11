@@ -12,10 +12,10 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 30px;
   width: 491px;
   gap: 20px;
-  border-radius: 30px;
+  border-radius: 20px;
   background: rgba(0, 0, 0, 0.31);
 }
 
@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 13px;
+  gap: 10px;
 }
 
 .formheading {
@@ -158,6 +158,46 @@
   background-color:black;
 }
 
+.FormControl{
+  background: rgba(255, 255, 255, 0.17)!important;
+  padding: 7px 20px 7px 20px !important;
+  color: #9E9E9E !important;
+  border-radius: 6px !important;
+  font-size: 20px !important;
+  margin-left: 0px !important;
+  text-align: left;
+  border-color: rgba(193, 190, 190, 0.33) !important;
+  
+}
+
+
+.FormControl:focus {
+    color: #212529;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.20rem rgba(245, 245, 245, 0.457) !important;
+}
+.FormSelect{
+ 
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"%3E%3Cpath d="M13.3327 8.3335L9.99935 11.6668L6.66602 8.3335" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position:  right 10px center !important;
+  border-color: rgba(193, 190, 190, 0.33) !important;
+}
+
+.FormControl:invalid{
+  border-color: rgba(193, 190, 190, 0.33) !important;
+}
+.FormControl:valid{
+  border-color: rgba(193, 190, 190, 0.33) !important;
+}
+
+
+.submitbutton{
+display: flex;
+justify-content: center;
+
+}
 
 
 

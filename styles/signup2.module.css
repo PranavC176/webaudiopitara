@@ -1,193 +1,239 @@
 .signup2main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
 
 }
 
 .signup2form {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    width: 491px;
-    gap: 20px;
-    border-radius: 30px;
-    background: rgba(0, 0, 0, 0.31);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 491px;
+  gap: 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.31);
 }
 
 .signup2head {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 13px;
-    font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .formheading {
-    color: #FFF;
-    text-align: cent;
-    font-family: Arial;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: #FFF;
+  text-align: center;
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 
 }
 
 
 
 .info {
-    display: flex;
-    gap: 5px;
-    flex-shrink: 0;
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .signup2formfield {
-    display: inline-flex;
-    flex-direction: column;
-
-    gap: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .signup2formfield input {
 
 
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.17);
-    border: none;
-    padding: 11px 20px;
-    color: #9E9E9E;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.17);
+  border: none;
+  padding: 12px 20px;
+  color: #9E9E9E;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
 }
 
 .iconfield {
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.17);
-    border: none;
-    width: 100%;
-    padding: 8px 20px 8px 20px;
-    color: #9E9E9E;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    align-items: center;
-    display: flex;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.17);
+  border: none;
+  width: 100%;
+  padding: 8px 20px 8px 20px;
+  color: #9E9E9E;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+  display: flex;
 
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .iconfieldtext input {
-    border-radius: 0px;
-    background: rgba(255, 255, 255, 0);
-    border: none;
-    padding: 0px 10px;
-    color: #9E9E9E;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    /* align-items: center; 
-  
-  }
-  
-  .form-control {
-    width: 100%;
-  }
-  
-  .form-control:focus {
-    border-color: none;
-    /* or any other color you desire */
-    box-shadow: none;
-    outline: none;
+  border-radius: 0px;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 0px 10px;
+  color: #9E9E9E;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* align-items: center; */
+
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: none;
+  /* or any other color you desire */
+  box-shadow: none;
+  outline: none;
 }
 
 .iconfieldtextname input {
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.17);
-    border: none;
-    padding: 12px 20px 12px 20px;
-    color: #9E9E9E;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.17);
+  border: none;
+  padding: 12px 20px 12px 20px;
+  color: #9E9E9E;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
 
 }
-
-.iconfieldtextname .inner {
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.17);
-    border: none;
-    padding: 12px 20px 12px 20px;
-    color: #9E9E9E;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
-    width: 50%;
-
-}
-
-
 
 .formtext {
 
-    color: #ffffffcc;
-    font-family: Arial;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: #ffffffcc;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 
 .countryCodeSelect {
 
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    padding-left: 10px;
-    font-family: Arial;
-    color: #9E9E9E;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  padding-left: 10px;
+  font-family: Arial;
+  color: #9E9E9E;
 }
 
 .countryCodeSelect option {
-    /* color: blue; */
-    background-color: black;
+  /* color: blue; */
+  background-color: black;
 }
 
-.genderfield {
-    border-radius: 20px;
-    background: none;
-    border: none;
-    width: 100%;
-    padding: 11px 20px 11px 20px;
-    color: #9E9E9E;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: space-between;
+.FormControl {
+  background: rgba(255, 255, 255, 0.17) !important;
+  padding: 7px 20px 7px 20px !important;
+  color: #9E9E9E !important;
+  border-radius: 6px !important;
+  font-size: 20px !important;
+  margin-left: 0px !important;
+  text-align: left;
+  border-color: rgba(193, 190, 190, 0.33) !important;
+}
+
+
+.FormControl:focus {
+  color: #212529;
+  border-color: #f3f4f7 !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 0.20rem rgba(245, 245, 245, 0.457) !important;
+}
+
+.FormSelect {
+
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"%3E%3Cpath d="M13.3327 8.3335L9.99935 11.6668L6.66602 8.3335" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position: right 10px center !important;
+
+}
+
+.FormControl:invalid {
+  border-color: rgba(193, 190, 190, 0.33) !important;
+}
+
+.FormControl:valid {
+  border-color: rgba(193, 190, 190, 0.33) !important;
+}
+
+
+.submitbutton {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.formCheck input:checked {
+  background-color: transparent !important;
+  border-color: #f3f4f7 !important;
+}
+
+.formCheck input:focus {
+  border-color: #ffffff;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.formCheck input {
+  background: transparent;
+  border: solid white 1px;
+}
+
+.formlabel{
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.FormControlgender {
+  background: rgba(255, 255, 255, 0.17) !important;
+  padding: 10px 20px 7px 50px !important;
+  color: #9E9E9E !important;
+  border-radius: 6px !important;
+  font-size: 20px !important;
+  margin-left: 0px !important;
+  text-align: left;
+  border-color: rgba(193, 190, 190, 0.33) !important;
 }

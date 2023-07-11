@@ -1,9 +1,33 @@
 import React from 'react'
+import { useState } from 'react';
 import styles from '@/styles/signup2.module.css'
 import Head from 'next/head'
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Row from 'react-bootstrap/Row';
+import { useRouter } from 'next/router';
 
 
 const signup2 = () => {
+
+    const [validated, setValidated] = useState(false);
+    const router = useRouter();
+
+    const handleSubmit = (event) => {
+        const form = event.currentTarget;
+        event.preventDefault();
+        if (form.checkValidity() === false) {
+
+            event.stopPropagation();
+        }
+        else {
+            alert({'message':'hello'})
+            router.push('/signup');
+        }
+        setValidated(true);
+    };
     return (
         <>
             <Head>
@@ -28,7 +52,7 @@ const signup2 = () => {
                         </div>
                     </div>
                     <div>
-                        <form className={styles.signup2formfield}>
+                        {/* <form className={styles.signup2formfield}>
                             <div style={{ fontFamily: 'arial', fontSize: '18px', color: 'white' }}>
                                 <label style={{ paddingBottom: '10px' }}>What’s your date of birth?</label>
                                 <input style={{ width: '100%', fontFamily: '30px' }} type='date' />
@@ -39,11 +63,7 @@ const signup2 = () => {
                                     <label style={{ paddingBottom: '10px' }}>What's your gender?</label>
                                 </div>
                                 <div style={{ display: 'flex', gap: '10px' }} className={styles.iconfieldtextname}>
-                                    {/* <select className={styles.countryCodeSelect}>
-                    <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="Female">Female</option>
-                  </select> */}
+                                
                                     <div className={styles.inner}>
                                         <input type="radio" value="male" name="gender" />&nbsp;<label for='male'>Male</label>
 
@@ -67,7 +87,91 @@ const signup2 = () => {
                             <div style={{ background: 'rgba(218, 61, 38, 0.47) ', borderRadius: '20px', margin: 'auto' }}>
                                 <input type="submit" style={{ background: 'rgba(218, 61, 38, 0.47)', color: 'white' }} value="Sign Up" />
                             </div>
-                        </form>
+                        </form> */}
+                        <Form noValidate validated={validated} onSubmit={handleSubmit} stle={{ width: '400px' }}>
+
+
+                            <Row className='mb-4' >
+                                <Form.Group as={Col} md="12" controlId="validationCustomUsername" >
+
+                                <Form.Label className={styles.formlabel}>What’s your date of birth?</Form.Label>
+                                    <Form.Control
+                                        type="date"
+                                        placeholder="Date Of Birth"
+                                        aria-describedby="inputGroupPrepend"
+                                        required
+                                        className={styles.FormControl}
+                                        style={{ borderRadius: '6px !important', padding: '5px 20px 8px 20px !important', textTransform: 'uppercase' }}
+                                    />
+                                    <Form.Control.Feedback type="invalid">
+                                    Please Enter Date of birth.
+                                    </Form.Control.Feedback>
+
+                                </Form.Group>
+                            </Row>
+                            
+
+                            <Row className='mb-4'>
+                                
+                                <Form.Label className={styles.formlabel}>What’s your gender?</Form.Label>
+                                <Form.Group className="mb-3"  as={Col} md="6" >
+                                    <Form.Check
+                                        required
+                                        type='radio'
+                                        label="Male"
+                                        name='gender'
+                                        style={{ color: '#9C9C9C'}}
+                                        className={[styles.formCheck,styles.FormControlgender]}
+                                    />
+                                
+                                </Form.Group>
+                                
+                                <Form.Group className="mb-3" as={Col} md="6">
+                                    <Form.Check
+                                   
+                                        required
+                                        type='radio'
+                                        name='gender'
+                                        label="Female"
+                                        style={{ color: '#9C9C9C'}}
+                                        className={[styles.formCheck,styles.FormControlgender]}
+                                    />
+                                </Form.Group>
+                                
+                            </Row>
+
+                            <Form.Group className="mb-3">
+                                    <Form.Check
+                                        required
+                                        label="I would prefer not to receive marketing messages from Audio Pitara"
+                                        feedback="You must agree before submitting."
+                                        feedbackType="invalid"
+                                        style={{ color: '#9C9C9C'}}
+                                        className={styles.formCheck}
+                                    />
+                                </Form.Group>
+                                <Form.Group   className="mb-3">
+                                    <Form.Check
+                                        required
+                                        label="Share my registration data with Audio Pitara’s content providers for marketing purposes."
+                                        feedback="You must agree before submitting."
+                                        feedbackType="invalid"
+                                        style={{ color: '#9C9C9C' }}
+                                        className={styles.formCheck}
+                                    />
+                                </Form.Group>
+                            <div className={styles.submitbutton} >
+
+                                
+
+
+                                <Button type="submit" className={styles.FormControl}
+                                    style={{ borderRadius: '20px', border: 'white', background: 'rgba(218, 61, 38, 0.47) !important', color: 'white' }} >
+                                    Sign Up
+                                </Button>
+
+                            </div>
+                        </Form>
                     </div>
 
                     <div className={styles.formtext}>
