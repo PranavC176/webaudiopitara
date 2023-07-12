@@ -23,7 +23,7 @@ const signup2 = () => {
             event.stopPropagation();
         }
         else {
-            alert({'message':'hello'})
+            alert({ 'message': 'hello' })
             router.push('/signup');
         }
         setValidated(true);
@@ -94,7 +94,7 @@ const signup2 = () => {
                             <Row className='mb-4' >
                                 <Form.Group as={Col} md="12" controlId="validationCustomUsername" >
 
-                                <Form.Label className={styles.formlabel}>What’s your date of birth?</Form.Label>
+                                    <Form.Label className={styles.formlabel}>What’s your date of birth?</Form.Label>
                                     <Form.Control
                                         type="date"
                                         placeholder="Date Of Birth"
@@ -104,66 +104,63 @@ const signup2 = () => {
                                         style={{ borderRadius: '6px !important', padding: '7px 20px 7px 20px !important', textTransform: 'uppercase' }}
                                     />
                                     <Form.Control.Feedback type="invalid">
-                                    Please Enter Date of birth.
+                                        Please Enter Date of birth.
                                     </Form.Control.Feedback>
 
                                 </Form.Group>
                             </Row>
-                            
+
 
                             <Row className='mb-4'>
-                                
+
                                 <Form.Label className={styles.formlabel}>What’s your gender?</Form.Label>
-                                <Form.Group className="mb-3"  as={Col} md="6" >
+                                <Form.Group className="mb-3" as={Col} md="6" >
                                     <Form.Check
                                         required
                                         type='radio'
                                         label="Male"
                                         name='gender'
-                                        style={{ color: '#9C9C9C'}}
-                                        className={[styles.formCheck,styles.FormControlgender]}
+                                        style={{ color: '#9C9C9C' }}
+                                        className={[styles.formCheck, styles.FormControlgender]}
                                     />
-                                
+
                                 </Form.Group>
-                                
+
                                 <Form.Group className="mb-3" as={Col} md="6">
                                     <Form.Check
-                                   
+
                                         required
                                         type='radio'
                                         name='gender'
                                         label="Female"
-                                        style={{ color: '#9C9C9C'}}
-                                        className={[styles.formCheck,styles.FormControlgender]}
+                                        style={{ color: '#9C9C9C' }}
+                                        className={[styles.formCheck, styles.FormControlgender]}
                                     />
                                 </Form.Group>
-                                
+
                             </Row>
 
                             <Form.Group className="mb-3">
-                                    <Form.Check
-                                        required
-                                        label="I would prefer not to receive marketing messages from Audio Pitara"
-                                        feedback="You must agree before submitting."
-                                        feedbackType="invalid"
-                                        style={{ color: '#9C9C9C'}}
-                                        className={styles.formCheck}
-                                    />
-                                </Form.Group>
-                                <Form.Group   className="mb-3">
-                                    <Form.Check
-                                        required
-                                        label="Share my registration data with Audio Pitara’s content providers for marketing purposes."
-                                        feedback="You must agree before submitting."
-                                        feedbackType="invalid"
-                                        style={{ color: '#9C9C9C' }}
-                                        className={styles.formCheck}
-                                    />
-                                </Form.Group>
+                                <Form.Check
+                                    required
+                                    label="I would prefer not to receive marketing messages from Audio Pitara"
+                                    feedback="You must agree before submitting."
+                                    feedbackType="invalid"
+                                    style={{ color: '#9C9C9C' }}
+                                    className={styles.formCheck}
+                                />
+                            </Form.Group>
+                            <Form.Group className="mb-3">
+                                <Form.Check
+                                    required
+                                    label="Share my registration data with Audio Pitara’s content providers for marketing purposes."
+                                    feedback="You must agree before submitting."
+                                    feedbackType="invalid"
+                                    style={{ color: '#9C9C9C' }}
+                                    className={styles.formCheck}
+                                />
+                            </Form.Group>
                             <div className={styles.submitbutton} >
-
-                                
-
 
                                 <Button type="submit" className={styles.FormControl}
                                     style={{ borderRadius: '20px', border: 'white', background: 'rgba(218, 61, 38, 0.47) !important', color: 'white' }} >
@@ -171,7 +168,7 @@ const signup2 = () => {
                                 </Button>
 
                             </div>
-                            
+
                         </Form>
                     </div>
 

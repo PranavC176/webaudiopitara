@@ -67,7 +67,7 @@ const Login = () => {
             <Row className='mb-4' >
               <Form.Group as={Col} md="12" controlId="validationCustomUsername" >
 
-              <Link href='#'>
+              <Link href='/login/phone'>
                     <Button  className={[styles.FormControl,styles.phone]} >
                                     <span className={styles.buttontext}>Continue With Phone </span>
                     </Button>
