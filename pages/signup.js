@@ -11,9 +11,6 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 
-
-
-
 const Signup = () => {
   const [validated, setValidated] = useState(false);
   const router = useRouter();
