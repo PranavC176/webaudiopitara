@@ -8,6 +8,7 @@ import Col from 'react-bootstrap/Col';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 
 
@@ -152,8 +153,8 @@ const Signup = () => {
         
           <InputGroup hasValidation>
           
-            <InputGroup.Text id="inputGroupPrepend" className={styles.FormControl} 
-            style={{borderRadius:'6px 0 0 6px !important',borderRight:'none',padding:'8px 20px 8px 20px !important'}}>
+            <InputGroup.Text id="inputGroupPrepend" className={[styles.FormControl,styles.passwordicon]} 
+        >
             <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
                     <path d="M5.25 7.5L12.8845 13.2653L12.8871 13.2674C13.7348 13.8891 14.1589 14.2001 14.6234 14.3203C15.034 14.4265 15.4656 14.4265 15.8762 14.3203C16.3412 14.2 16.7665 13.8881 17.6157 13.2653C17.6157 13.2653 22.5126 9.50742 25.25 7.5M4 19.7502V10.2502C4 8.85011 4 8.14953 4.27248 7.61475C4.51217 7.14434 4.89434 6.76217 5.36475 6.52248C5.89953 6.25 6.60011 6.25 8.00024 6.25H22.5002C23.9004 6.25 24.5995 6.25 25.1342 6.52248C25.6047 6.76217 25.9881 7.14434 26.2278 7.61475C26.5 8.149 26.5 8.84874 26.5 10.2461V19.7545C26.5 21.1519 26.5 21.8506 26.2278 22.3849C25.9881 22.8553 25.6047 23.2381 25.1342 23.4778C24.6 23.75 23.9013 23.75 22.5039 23.75H7.99614C6.59874 23.75 5.899 23.75 5.36475 23.4778C4.89434 23.2381 4.51217 22.8553 4.27248 22.3849C4 21.8501 4 21.1504 4 19.7502Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                   </svg></InputGroup.Text>
@@ -162,8 +163,8 @@ const Signup = () => {
               placeholder="Email Address"
               aria-describedby="inputGroupPrepend"
               required
-              className={styles.FormControl}
-              style={{borderRadius:'0px 6px 6px 0px !important',borderLeft:'none',padding:'5px 0px 8px 5px !important'}}
+              className={[styles.FormControl,styles.passwordfield]}
+          
             />
             <Form.Control.Feedback type="invalid">
               Please Enter Email (example@gmail.com).
@@ -178,8 +179,8 @@ const Signup = () => {
           <InputGroup hasValidation>
             
                   <Form.Group as={Col} md="2" controlId="validationCustom03">
-        <Form.Select aria-label="Default select example" className={[styles.FormControl,styles.FormSelect]}
-        style={{borderRadius:'6px 0 0 6px  !important',borderRight:'none',padding:'8px 20px 20px 20px !important'}}
+        <Form.Select aria-label="Default select example" className={[styles.FormControl,styles.FormSelect,styles.numbericon]}
+        
           >
       <option style={{background:' black'}} >+91</option>
       <option value="1" style={{background:' black'}}>One</option>
@@ -192,8 +193,8 @@ const Signup = () => {
               placeholder="Phone Number"
               aria-describedby="inputGroupPrepend"
               required
-              className={styles.FormControl}
-              style={{borderRadius:'0px 6px 6px 0px !important',borderLeft:'none',padding:'7px 20px 7px 5px !important'}}
+              className={[styles.FormControl,styles.numberfield]}
+             
             />
             <Form.Control.Feedback type="invalid">
               Please Enter a Phone Number.
@@ -206,8 +207,8 @@ const Signup = () => {
         
           <InputGroup hasValidation>
           
-            <InputGroup.Text id="inputGroupPrepend" className={styles.FormControl} 
-            style={{borderRadius:'6px 0 0 6px !important',borderRight:'none',padding:'7px 20px 7px 20px !important'}}>
+            <InputGroup.Text id="inputGroupPrepend" className={[styles.FormControl,styles.passwordicon]} 
+            >
              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 21" fill="none">
                     <path d="M15.0013 12.9004H15.8346M7.5013 12.9004H12.5013M5.0013 12.9004H4.16797M4.16797 10.4004H15.8346M4.16797 7.90039H15.8346M1.66797 12.7339V8.06722C1.66797 7.1338 1.66797 6.66674 1.84962 6.31022C2.00941 5.99662 2.2642 5.74184 2.5778 5.58205C2.93432 5.40039 3.40138 5.40039 4.3348 5.40039H15.6681C16.6016 5.40039 17.0676 5.40039 17.4241 5.58205C17.7377 5.74184 17.9934 5.99662 18.1532 6.31022C18.3346 6.66639 18.3346 7.13289 18.3346 8.06448V12.7363C18.3346 13.6679 18.3346 14.1337 18.1532 14.4899C17.9934 14.8035 17.7377 15.0591 17.4241 15.2189C17.068 15.4004 16.6021 15.4004 15.6705 15.4004H4.33206C3.40046 15.4004 2.93397 15.4004 2.5778 15.2189C2.2642 15.0591 2.00941 14.8035 1.84962 14.4899C1.66797 14.1334 1.66797 13.6673 1.66797 12.7339Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                   </svg></InputGroup.Text>
@@ -216,8 +217,8 @@ const Signup = () => {
               placeholder="Password"
               aria-describedby="inputGroupPrepend"
               required
-              className={styles.FormControl}
-              style={{borderRadius:'0px 6px 6px 0px !important',borderLeft:'none',padding:'7px 0px 7px 5px !important'}}
+              className={[styles.FormControl,styles.passwordfield]}
+        
             />
             <Form.Control.Feedback type="invalid">
               Please Enter Email (example@gmail.com).
@@ -231,8 +232,7 @@ const Signup = () => {
         
           <InputGroup hasValidation>
           
-            <InputGroup.Text id="inputGroupPrepend" className={styles.FormControl} 
-            style={{borderRadius:'6px 0 0 6px !important',borderRight:'none',padding:'7px 20px 7px 20px !important'}}>
+            <InputGroup.Text id="inputGroupPrepend" className={[styles.FormControl,styles.passwordicon]}>
              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 21" fill="none">
                     <path d="M15.0013 12.9004H15.8346M7.5013 12.9004H12.5013M5.0013 12.9004H4.16797M4.16797 10.4004H15.8346M4.16797 7.90039H15.8346M1.66797 12.7339V8.06722C1.66797 7.1338 1.66797 6.66674 1.84962 6.31022C2.00941 5.99662 2.2642 5.74184 2.5778 5.58205C2.93432 5.40039 3.40138 5.40039 4.3348 5.40039H15.6681C16.6016 5.40039 17.0676 5.40039 17.4241 5.58205C17.7377 5.74184 17.9934 5.99662 18.1532 6.31022C18.3346 6.66639 18.3346 7.13289 18.3346 8.06448V12.7363C18.3346 13.6679 18.3346 14.1337 18.1532 14.4899C17.9934 14.8035 17.7377 15.0591 17.4241 15.2189C17.068 15.4004 16.6021 15.4004 15.6705 15.4004H4.33206C3.40046 15.4004 2.93397 15.4004 2.5778 15.2189C2.2642 15.0591 2.00941 14.8035 1.84962 14.4899C1.66797 14.1334 1.66797 13.6673 1.66797 12.7339Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                   </svg></InputGroup.Text>
@@ -241,8 +241,8 @@ const Signup = () => {
               placeholder="Confirm Password"
               aria-describedby="inputGroupPrepend"
               required
-              className={styles.FormControl}
-              style={{borderRadius:'0px 6px 6px 0px !important',borderLeft:'none',padding:'7px 0px 7px 5px !important'}}
+              className={[styles.FormControl,styles.passwordfield]}
+          
             />
             <Form.Control.Feedback type="invalid">
               Please Enter Email (example@gmail.com).
@@ -253,8 +253,9 @@ const Signup = () => {
       
       <div className={styles.submitbutton} >
       
-      <Button type="submit"  className={styles.FormControl} 
-      style={{borderRadius: '20px',border:'white',background: 'rgba(218, 61, 38, 0.47) !important', color: 'white'}} >
+      <Button type="submit" 
+      className={styles.continue}
+      style={{borderRadius: '20px',border:'white',marginTop:'20px',padding:'8px 30px'}} >
       Continue
       </Button>
      
@@ -266,7 +267,7 @@ const Signup = () => {
             <span>Continue, if you agree the T&C and Privacy Policy</span>
           </div>
           <div>
-            <span className={styles.formtext} style={{ color: '#666' }}>Already have an account?</span>&nbsp;<span className={styles.formtext} style={{ color: 'white' }}><a>Login Now</a></span>
+            <span className={styles.formtext} style={{ color: '#666' }}>Already have an account?</span>&nbsp;<span className={styles.formtext} style={{ color: 'white' }}><Link href='/login/main'>Login Now</Link></span>
           </div>
         </div>
       </div>

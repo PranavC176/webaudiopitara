@@ -101,7 +101,7 @@ const signup2 = () => {
                                         aria-describedby="inputGroupPrepend"
                                         required
                                         className={styles.FormControl}
-                                        style={{ borderRadius: '6px !important', padding: '5px 20px 8px 20px !important', textTransform: 'uppercase' }}
+                                        style={{ borderRadius: '6px !important', padding: '7px 20px 7px 20px !important', textTransform: 'uppercase' }}
                                     />
                                     <Form.Control.Feedback type="invalid">
                                     Please Enter Date of birth.
@@ -171,6 +171,7 @@ const signup2 = () => {
                                 </Button>
 
                             </div>
+                            
                         </Form>
                     </div>
 
