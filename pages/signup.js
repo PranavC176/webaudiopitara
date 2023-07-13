@@ -252,7 +252,7 @@ const Signup = () => {
       
       <Button type="submit" 
       className={styles.continue}
-      style={{borderRadius: '20px',border:'white',marginTop:'20px',padding:'8px 30px'}} >
+       >
       Continue
       </Button>
      

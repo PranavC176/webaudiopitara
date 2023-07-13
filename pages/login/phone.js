@@ -42,7 +42,7 @@ const Login = () => {
             
           </div>
           <div className={styles.info} style={{textAlign:'center'}}>
-            <p>A SMS may be sent to authenticate your account, and message and data rates may apply.</p>
+            <span>A SMS may be sent to authenticate your account, and message and data rates may apply.</span>
             </div>
           
           <Form noValidate >
@@ -75,12 +75,14 @@ const Login = () => {
           </InputGroup>
         </Form.Group>
       </Row>
+      <div className={styles.formtext}>
+           <Link href='/forgotpassword/phone'><span style={{ color: 'white' }}>Forgot Your Password?</span></Link>
+        </div>
 
         <div className={styles.submitbutton} >
       
       <Button type="submit" 
-      className={styles.continue}
-      style={{borderRadius: '20px',border:'white',marginTop:'20px',padding:'8px 30px'}} >
+      className={styles.continue} >
       Continue
       </Button>
      

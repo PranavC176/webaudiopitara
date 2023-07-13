@@ -12,7 +12,7 @@
     align-items: center;
     padding: 40px;
     width: 491px;
-    gap: 20px;
+    gap: 25px;
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.31);
   }
@@ -47,17 +47,17 @@
   }
   
   .FormControl {
-    background: rgba(255, 255, 255, 0.17) !important;
-    padding: 12px 0px !important;
+    background: rgba(255, 255, 255, 0.17)!important;
+    padding: 12px 60px !important;
     color: #9E9E9E !important;
     border-radius: 6px !important;
     font-size: 20px !important;
     margin-left: 0px !important;
     text-align: left;
     border-color: rgba(193, 190, 190, 0.33) !important;
-   
-  
   }
+
+
   
   
   .FormControl:focus {
@@ -88,14 +88,22 @@
   .FormControl:valid {
     border-color: rgba(193, 190, 190, 0.33) !important;
   }
+
+  .FormControlEmail{
+    background: rgba(218, 61, 38, 0.50)!important;
+    padding: 12px 0px !important;
+    color: #9E9E9E !important;
+    border-radius: 6px !important;
+    font-size: 20px !important;
+    margin-left: 0px !important;
+    text-align: left;
+    border-color: rgba(193, 190, 190, 0.33) !important;
+  }
   
   
   .submitbutton {
     display: flex;
     justify-content: center;
-
-
-  
   }
   
   .google {
@@ -123,6 +131,7 @@
     background-repeat: no-repeat !important;
     background-size: cover;
     background-position: left 20px center !important;
+    background-color: rgba(218, 61, 38, 0.50);
     border-color: rgba(193, 190, 190, 0.33) !important;
     width:100%;
     padding-left: 25px;
@@ -136,13 +145,15 @@
     border-color: rgba(193, 190, 190, 0.33) !important;
     width:100%;
     padding-left: 25px;
+    
   }
-  .buttontext {
-    padding-left: 25px;
+  
+  .buttontextpassword{
+    padding-left: 70px;
     color: #FFF;
     font-size: 20px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
   }
   
@@ -176,9 +187,25 @@
 
   .continue{
     background-color:rgba(218, 61, 38, 0.47) !important;
+    border-radius:20px;
+    margin-top:20px;
+    padding:8px 30px;
+    border:white;
   }
   .continue:focus{
    
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.20rem rgba(245, 245, 245, 0.457) !important;
+  }
+
+  .passwordcontinue{
+    background-color:#DA3D26 !important;
+    border-radius:6px;
+    padding:8px 30px;
+    border:white;
+  }
+
+  .passwordcontinue:focus{
     outline: 0 !important;
     box-shadow: 0 0 0 0.20rem rgba(245, 245, 245, 0.457) !important;
   }

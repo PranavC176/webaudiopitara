@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import Head from 'next/head'
 import Script from 'next/script'
 import Navbar from '@/components/Navbar'
+import Login from './login/main'
 
 
 export default function App({ Component, pageProps }) {
@@ -18,6 +19,7 @@ export default function App({ Component, pageProps }) {
         crossOrigin="anonymous"
       />
       <Navbar/>
+      
       <Component {...pageProps} />
 
     </>

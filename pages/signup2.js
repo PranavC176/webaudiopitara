@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 
@@ -160,13 +161,13 @@ const signup2 = () => {
                                     className={styles.formCheck}
                                 />
                             </Form.Group>
+
                             <div className={styles.submitbutton} >
-
-                                <Button type="submit" className={styles.FormControl}
-                                    style={{ borderRadius: '20px', border: 'white', background: 'rgba(218, 61, 38, 0.47) !important', color: 'white' }} >
-                                    Sign Up
+                                
+                                <Button type="submit"
+                                    className={styles.continue} >
+                                    Submit
                                 </Button>
-
                             </div>
 
                         </Form>
@@ -176,7 +177,7 @@ const signup2 = () => {
                         <span>Continue, if you agree the T&C and Privacy Policy</span>
                     </div>
                     <div>
-                        <span className={styles.formtext} style={{ color: '#9C9C9C' }}>Already have an account?</span>&nbsp;<span className={styles.formtext} style={{ color: 'white' }}><a>Login Now</a></span>
+                        <span className={styles.formtext} style={{ color: '#9C9C9C' }}>Already have an account?</span>&nbsp;<span className={styles.formtext} style={{ color: 'white' }}><Link href='/login/main'>Login Now</Link></span>
                     </div>
                 </div>
             </div>

@@ -85,14 +85,13 @@ const Login = () => {
         </Form.Group>
       </Row>
       <div className={styles.formtext}>
-            <span style={{ color: 'white' }}>Forgot Your Password?</span>
+            <Link href='/forgotpassword/email'><span style={{ color: 'white' }}>Forgot Your Password?</span></Link>
         </div>
 
         <div className={styles.submitbutton} >
       
       <Button type="submit" 
-      className={styles.continue}
-      style={{borderRadius: '20px',border:'white',marginTop:'20px',padding:'8px 30px'}} >
+      className={styles.continue} >
       Continue
       </Button>
      

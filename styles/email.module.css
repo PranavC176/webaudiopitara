@@ -176,6 +176,10 @@
 
   .continue{
     background-color:rgba(218, 61, 38, 0.47) !important;
+    border-radius:20px;
+    margin-top:20px;
+    padding:8px 30px;
+    border:white;
   }
   .continue:focus{
    

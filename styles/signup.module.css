@@ -132,7 +132,7 @@
 
   color: #ffffffcc;
   font-family: Arial;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -226,16 +226,18 @@ padding:7px 10px 7px 15px !important ;
 .submitbutton{
 display: flex;
 justify-content: center;
-
 }
 
 .continue{
   background-color:rgba(218, 61, 38, 0.47) !important;
+  border-radius:20px;
+  margin-top:20px;
+  padding:8px 30px;
+  border:white;
 }
 
 .continue:focus{
-   
-  outline: 0 !important;
+   outline: 0 !important;
   box-shadow: 0 0 0 0.20rem rgba(245, 245, 245, 0.457) !important;
 }
 
