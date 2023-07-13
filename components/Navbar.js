@@ -6,11 +6,8 @@ import Link from 'next/link'
 const navbar = () => {
   return (
     <div className={styles.nav}>
-        <Link href='/'><Image
-        src='/Audio Pitara Logo with Tagline.png'
-        width={112}
-        height={50}
-        />
+        <Link href='/'>
+        <img src='/logo.svg'></img>
         </Link>
     </div>
   )

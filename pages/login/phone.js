@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 
 
-const Login = () => {
+const PhoneLogin = () => {
 
 
   return (
@@ -100,4 +100,4 @@ const Login = () => {
   )
 
 }
-export default Login;
+export default PhoneLogin;

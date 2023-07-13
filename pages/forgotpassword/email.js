@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 
 
-const Login = () => {
+const ForgotPasswordEmail = () => {
 
 
     return (
@@ -103,4 +103,4 @@ const Login = () => {
     )
 
 }
-export default Login;
+export default ForgotPasswordEmail;

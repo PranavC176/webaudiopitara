@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import styles from '@/styles/email.module.css';
+import styles from '@/styles/emailotp.module.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
@@ -39,51 +39,108 @@ const EmailLogin = () => {
               <span >Your Information is safe with us</span>
               
             </div>
-            
-          </div>
-          <div className={styles.info} style={{textAlign:'center'}}>
-            <p>An email may be sent to authenticate your registered email address.</p>
+        </div>
+        
+          <div className={styles.otpinfo}>
+          <div>
+            <span className={styles.otpmsg}>Enter your 6-digit code</span>
+            </div>
+            <div style={{}}>
+            <span>We’ve sent your OTP code to your email address</span>
+            </div>
             </div>
           
           <Form noValidate >
             
           <Row className='mb-4' >
-      <Form.Group as={Col} md="12" controlId="validationCustomUsername" >
+      <Form.Group as={Col} md="2" controlId="validationCustomUsername" >
         
          
             <Form.Control
-              type="email"
-              placeholder="Email Address"
+              type="text"
+              placeholder="0"
               aria-describedby="inputGroupPrepend"
               required
-              className={[styles.FormControl,styles.emailfeild]}
+              className={[styles.FormControl]}
             
             />
-            <Form.Control.Feedback type="invalid">
-              Please Enter Email (example@gmail.com).
-            </Form.Control.Feedback>
-          
+            
+ 
         </Form.Group>
+        <Form.Group as={Col} md="2" controlId="validationCustomUsername" >
+        
+         
+            <Form.Control
+              type="text"
+              placeholder="0"
+              aria-describedby="inputGroupPrepend"
+              required
+              className={[styles.FormControl]}
+            
+            />
+            
+ 
+        </Form.Group>
+        <Form.Group as={Col} md="2" controlId="validationCustomUsername" >
+        
+         
+            <Form.Control
+              type="text"
+              placeholder="0"
+              aria-describedby="inputGroupPrepend"
+              required
+              className={[styles.FormControl]}
+            
+            />
+            
+ 
+        </Form.Group>
+        <Form.Group as={Col} md="2" controlId="validationCustomUsername" >
+        
+         
+            <Form.Control
+              type="text"
+              placeholder="0"
+              aria-describedby="inputGroupPrepend"
+              required
+              className={[styles.FormControl]}
+            
+            />
+            
+ 
+        </Form.Group>
+        <Form.Group as={Col} md="2" controlId="validationCustomUsername" >
+        
+         
+            <Form.Control
+              type="text"
+              placeholder="0"
+              aria-describedby="inputGroupPrepend"
+              required
+              className={[styles.FormControl]}
+            
+            />
+            
+ 
+        </Form.Group>
+        <Form.Group as={Col} md="2" controlId="validationCustomUsername" >
+        
+         
+            <Form.Control
+              type="text"
+              placeholder="0"
+              aria-describedby="inputGroupPrepend"
+              required
+              className={[styles.FormControl]}
+            
+            />
+            
+ 
+        </Form.Group>
+        
       </Row>
 
-      <Row className='mb-4' >
-      <Form.Group as={Col} md="12" controlId="validationCustomUsername" >
-        
-         
-            <Form.Control
-              type="password"
-              placeholder="Password"
-              aria-describedby="inputGroupPrepend"
-              required
-              className={[styles.FormControl,styles.passwordfeild]}
-            
-            />
-            <Form.Control.Feedback type="invalid">
-              Please Enter Password
-            </Form.Control.Feedback>
-          
-        </Form.Group>
-      </Row>
+    
       <div className={styles.formtext}>
             <Link href='/forgotpassword/email'><span style={{ color: 'white' }}>Forgot Your Password?</span></Link>
         </div>
