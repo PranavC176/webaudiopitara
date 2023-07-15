@@ -174,10 +174,10 @@ const Signup2 = () => {
                     </div>
 
                     <div className={styles.formtext}>
-                        <span>Continue, if you agree the T&C and Privacy Policy</span>
+                        <span>Continue, if you agree the <u>T&C</u> and <u>Privacy Policy</u></span>
                     </div>
                     <div>
-                        <span className={styles.formtext} style={{ color: '#9C9C9C' }}>Already have an account?</span>&nbsp;<span className={styles.formtext} style={{ color: 'white' }}><Link href='/login/main'>Login Now</Link></span>
+                        <span className={styles.formtext} style={{ color: '#9C9C9C' }}>Already have an account?</span>&nbsp;<span className={styles.formtext} style={{ color: 'white' }}><Link href='/login'>Login Now</Link></span>
                     </div>
                 </div>
             </div>

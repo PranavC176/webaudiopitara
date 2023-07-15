@@ -237,23 +237,23 @@ const Signup = () => {
         </Form.Group>
       </Row>
       <div className={styles.submitbutton} >
-      <Link>
+     
       <Button type="submit" 
       className={styles.continue}
        >
       Continue
       </Button>
-      </Link>
+      
      
       </div>
     </Form>
           </div>
 
           <div className={styles.formtext}>
-            <span>Continue, if you agree the T&C and Privacy Policy</span>
+            <span>Continue, if you agree the <u>T&C</u> and <u>Privacy Policy</u></span>
           </div>
           <div>
-            <span className={styles.formtext} style={{ color: '#666' }}>Already have an account?</span>&nbsp;<span className={styles.formtext} style={{ color: 'white' }}><Link href='/login/'>Login Now</Link></span>
+            <span className={styles.formtext} style={{ color: '#666' }}>Already have an account?</span>&nbsp;<span className={styles.formtext} style={{ color: 'white' }}><Link href='/login'>Login Now</Link></span>
           </div>
         </div>
       </div>

@@ -80,7 +80,7 @@ const Login = () => {
 
               <Link href='/login/email'>
                     <Button  className={[styles.FormControl,styles.email]} >
-                                    <span className={styles.buttontext}>Continue With Email</span>
+                    <span className={styles.buttontext}>Continue With Email</span>
                     </Button>
                     </Link>
                 
@@ -90,10 +90,10 @@ const Login = () => {
             
           </Form>
           <div className={styles.formtext}>
-            <span>Continue, if you agree the T&C and Privacy Policy</span>
+            <span>Continue, if you agree the <u>T&C</u> and <u>Privacy Policy</u></span>
           </div>
           <div>
-            <span className={styles.formtext} style={{ color: '#666' }}>New to Audio Pitara?</span>&nbsp;<span className={styles.sign}><Link href='/signup'> Sign Up Now</Link></span>
+            <span className={styles.formtext} style={{ color: '#666' }}>New to Audio Pitara?</span>&nbsp;<span className={styles.sign}><Link href='/signup'>Sign Up Now</Link></span>
           </div>
         </div>
       </div>

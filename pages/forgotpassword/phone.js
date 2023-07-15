@@ -106,7 +106,7 @@ const ForgotPasswordPhone = () => {
                     </Form>
 
                     <div>
-                        <span className={styles.formtext} style={{ color: '#666' }}>Trouble resetting the password?</span>&nbsp;<span className={styles.formtext} style={{ color: 'white' }}><Link href='#'>Contact Support</Link></span>
+                        <span className={styles.formtext} style={{ color: '#666' }}>Trouble resetting the password?</span>&nbsp;<span className={styles.formtext} style={{ color: 'white' }}><Link href='#'><u>Contact Support</u></Link></span>
                     </div>
                 </div>
             </div>
