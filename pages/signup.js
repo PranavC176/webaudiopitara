@@ -9,6 +9,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { toast } from 'react-toastify';
 
 
 const Signup = () => {
@@ -16,11 +17,13 @@ const Signup = () => {
   const router = useRouter();
 
   const handleSubmit = (event) => {
+    
     const form = event.currentTarget;
     event.preventDefault();
     if (form.checkValidity() === false) {
       
       event.stopPropagation();
+      
     }
     else{
       router.push('/signup2');
