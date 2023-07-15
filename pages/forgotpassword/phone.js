@@ -85,7 +85,7 @@ const ForgotPasswordPhone = () => {
 
                                 <Link href='/forgotpassword/email'>
                                     <Button className={[styles.FormControlEmail, styles.email]} >
-                                    <span className={styles.buttontextpassword}>Continue With Email</span>
+                                        <span className={styles.buttontextpassword}>Continue With Email</span>
                                     </Button>
                                 </Link>
 
@@ -94,10 +94,12 @@ const ForgotPasswordPhone = () => {
                         </Row>
 
                         <div className={styles.submitbutton} >
-                            <Button type="submit"
-                                className={styles.passwordcontinue} >
-                                Continue
-                            </Button>
+                            <Link href='/forgotpassword/otp/phone'>
+                                <Button type="submit"
+                                    className={styles.passwordcontinue} >
+                                    Continue
+                                </Button>
+                            </Link>
 
                         </div>
 

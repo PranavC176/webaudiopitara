@@ -93,7 +93,7 @@ const Login = () => {
             <span>Continue, if you agree the T&C and Privacy Policy</span>
           </div>
           <div>
-            <span className={styles.formtext} style={{ color: '#666' }}>New to Audio Pitara?</span>&nbsp;<span className={styles.formtext} style={{ color: 'white' }}><Link href='/signup'> Sign Up Now</Link></span>
+            <span className={styles.formtext} style={{ color: '#666' }}>New to Audio Pitara?</span>&nbsp;<span className={styles.sign}><Link href='/signup'> Sign Up Now</Link></span>
           </div>
         </div>
       </div>

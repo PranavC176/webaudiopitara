@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import styles from '@/styles/email.module.css';
+import styles from '@/styles/emailotp.module.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
@@ -25,7 +25,7 @@ const EmailLogin = () => {
         <div className={styles.loginform}>
           <div className={styles.loginhead}>
             <div className={styles.formheading}>
-              <span>Login to Audio Pitara</span>
+              <span>Phone Verification</span>
             </div>
 
             <div className={styles.info}>
@@ -39,59 +39,114 @@ const EmailLogin = () => {
               <span >Your Information is safe with us</span>
               
             </div>
-            
-          </div>
-          <div className={styles.info} style={{textAlign:'center'}}>
-            <p>An email may be sent to authenticate your registered email address.</p>
+        </div>
+        
+          <div className={styles.otpinfo}>
+          <div>
+            <span className={styles.otpmsg}>Enter your 6-digit code</span>
+            </div>
+            <div style={{}}>
+            <span>We’ve sent your OTP code to the phone number ending XXXXXXX804</span>
+            </div>
             </div>
           
           <Form noValidate >
             
           <Row className='mb-4' >
-      <Form.Group as={Col} md="12" controlId="validationCustomUsername" className={styles.inputwrapper} >
+      <Form.Group as={Col} md="2" className={styles.otpfield} controlId="validationCustomUsername" >
         
          
             <Form.Control
-              type="email"
-              placeholder="Email Address"
+              type="text"
+              
               aria-describedby="inputGroupPrepend"
               required
-              className={[styles.FormControl,styles.emailfeild]}
-              id="my-input"
+              className={[styles.FormControl]}
+            
             />
-           
-            <Form.Control.Feedback type="invalid">
-              Please Enter Email (example@gmail.com).
-            </Form.Control.Feedback>
-          
+            
+ 
         </Form.Group>
+        <Form.Group as={Col} md="2" className={styles.otpfield} controlId="validationCustomUsername" >
+        
+         
+            <Form.Control
+              type="text"
+              
+              aria-describedby="inputGroupPrepend"
+              required
+              className={[styles.FormControl]}
+            
+            />
+            
+ 
+        </Form.Group>
+        <Form.Group as={Col} md="2" className={styles.otpfield} controlId="validationCustomUsername" >
+        
+         
+            <Form.Control
+              type="text"
+              
+              aria-describedby="inputGroupPrepend"
+              required
+              className={[styles.FormControl]}
+            
+            />
+            
+ 
+        </Form.Group>
+        <Form.Group as={Col} md="2" className={styles.otpfield} controlId="validationCustomUsername" >
+        
+         
+            <Form.Control
+              type="text"
+              
+              aria-describedby="inputGroupPrepend"
+              required
+              className={[styles.FormControl]}
+            
+            />
+            
+ 
+        </Form.Group>
+        <Form.Group as={Col} md="2" className={styles.otpfield} controlId="validationCustomUsername" >
+        
+         
+            <Form.Control
+              type="text"
+              
+              aria-describedby="inputGroupPrepend"
+              required
+              className={[styles.FormControl]}
+            
+            />
+            
+ 
+        </Form.Group>
+        <Form.Group as={Col} md="2" className={styles.otpfield} controlId="validationCustomUsername" >
+        
+         
+            <Form.Control
+              type="text"
+             
+              aria-describedby="inputGroupPrepend"
+              required
+              className={[styles.FormControl]}
+            
+            />
+            
+ 
+        </Form.Group>
+        
       </Row>
 
-      <Row className='mb-4' >
-      <Form.Group as={Col} md="12" controlId="validationCustomUsername" className={styles.inputwrapper}>
-        
-         
-            <Form.Control
-              type="password"
-              placeholder="Password"
-              aria-describedby="inputGroupPrepend"
-              required
-              className={[styles.FormControl,styles.passwordfeild]}
-            
-            />
-            
-            <Form.Control.Feedback type="invalid">
-              Please Enter Password
-            </Form.Control.Feedback>
-          
-        </Form.Group>
-      </Row>
+    
       <div className={styles.formtext}>
-            <Link href='/forgotpassword/email'><span style={{ color: 'white' }}>Forgot Your Password?</span></Link>
+      <span style={{ color: 'white' }}>Didn’t Receive Code?</span><Link href='/forgotpassword/email'><span style={{ color: ' #DA3D26' }}> Resend</span></Link>
         </div>
 
         <div className={styles.submitbutton} >
-        <Link href='/login/otp/email'>
+      <Link href='/forgotpassword/reset'>
       <Button type="submit" 
       className={styles.continue} >
       Continue
@@ -110,7 +165,6 @@ const EmailLogin = () => {
 
     </>
   )
-  
 
 }
 export default EmailLogin;

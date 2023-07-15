@@ -71,7 +71,7 @@
   
   .FormControl {
     background: rgba(255, 255, 255, 0.17) !important;
-    padding: 15px !important;
+    padding: 12px 20px !important;
     color: #9E9E9E !important;
     border-radius: 6px !important;
     font-size: 20px !important;
@@ -175,6 +175,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: center;
   }
 
   .emailfeild{
@@ -201,9 +202,54 @@
     margin-top:20px;
     padding:8px 30px;
     border:white;
+    font-weight: 400;
   }
   .continue:focus{
    
     outline: 0 !important;
     box-shadow: 0 0 0 0.20rem rgba(245, 245, 245, 0.457) !important;
   }
+
+  /* .inputwrapper {
+    position: relative;
+    margin-bottom: 20px;
+    align-items: start !important;
+  }
+
+  .inputwrapper .FormControl {
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+
+  .inputwrapper .FormControl:focus,
+  .inputwrapper .FormControl:not(:placeholder-shown) {
+    outline: none;
+    border-color: #000000;
+  }
+
+  .inputwrapper span {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left:50px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(-50%);
+  }
+
+  .inputwrapper .FormControl:focus + span,
+  .inputwrapper .FormControl:not(:placeholder-shown) + span {
+    opacity: 1;
+  } */
+
+  .otpfield{
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+ 

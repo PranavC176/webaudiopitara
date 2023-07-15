@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import styles from '@/styles/phone.module.css';
+import styles from '@/styles/email.module.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 
 
-const PhoneLogin = () => {
+const ResetPassword = () => {
 
 
   return (
@@ -25,7 +25,7 @@ const PhoneLogin = () => {
         <div className={styles.loginform}>
           <div className={styles.loginhead}>
             <div className={styles.formheading}>
-              <span>Login to Audio Pitara</span>
+              <span>Reset Password</span>
             </div>
 
             <div className={styles.info}>
@@ -41,62 +41,70 @@ const PhoneLogin = () => {
             </div>
             
           </div>
-          <div className={styles.info} style={{textAlign:'center'}}>
-            <span>A SMS may be sent to authenticate your account, and message and data rates may apply.</span>
-            </div>
           
           <Form noValidate >
             
-      <Row className='mb-4'>
-      <Form.Group as={Col} md="12" controlId="validationCustomUsername" 
->
+          <Row className='mb-4' >
+      <Form.Group as={Col} md="12" controlId="validationCustomUsername" className={styles.inputwrapper}>
         
-          <InputGroup hasValidation>
-            
-        <Form.Group as={Col} md="3" controlId="validationCustom03">
-        <Form.Select aria-label="Default select example" className={[styles.FormControl,styles.FormSelect,styles.numbericon]}
-        >
-      <option style={{background:' black'}} >+91</option>
-      <option value="1" style={{background:' black'}}>One</option>
-      <option value="2" style={{background:' black'}}>Two</option>
-      <option value="3" style={{background:' black'}}>Three</option>
-    </Form.Select>
-        </Form.Group>
+         
             <Form.Control
-              type="text"
-              placeholder="Phone Number"
+              type="password"
+              placeholder="New Password"
               aria-describedby="inputGroupPrepend"
               required
-              className={[styles.FormControl,styles.numberfield]}
-             
+              className={[styles.FormControl,styles.passwordfeild]}
+            
             />
-          
+            
             <Form.Control.Feedback type="invalid">
-              Please Enter a Phone Number.
+              Please Enter Password
             </Form.Control.Feedback>
-          </InputGroup>
+          
         </Form.Group>
       </Row>
-      <Row>      <div className={styles.submitbutton} >
-      <Link href='/login/otp/phone'>
+
+      <Row className='mb-2'>
+      <Form.Group as={Col} md="12" controlId="validationCustomUsername" className={styles.inputwrapper}>
+        
+         
+            <Form.Control
+              type="password"
+              placeholder="Confirm Password"
+              aria-describedby="inputGroupPrepend"
+              required
+              className={[styles.FormControl,styles.passwordfeild]}
+            
+            />
+            
+            <Form.Control.Feedback type="invalid">
+              Please Enter Password
+            </Form.Control.Feedback>
+          
+        </Form.Group>
+      </Row>
+      
+        <div className={styles.submitbutton} >
+        <Link href='#'>
       <Button type="submit" 
       className={styles.continue} >
-      Continue
+     Reset Password
       </Button>
       </Link>
+     
       </div>
-      </Row>
- 
+            
           </Form>
           
           <div>
-            <span className={styles.formtext} style={{ color: '#666' }}>New to Audio Pitara?</span>&nbsp;<span className={styles.formtext} style={{ color: 'white' }}><Link href='/signup'> Sign Up Now</Link></span>
+            <span className={styles.formtext} style={{ color: '#666' }}>Trouble resetting the password? </span><span className={styles.formtext} style={{ color: 'white' }}><Link href='/signup'><u>Contact Support</u></Link></span>
           </div>
         </div>
       </div>
 
     </>
   )
+  
 
 }
-export default PhoneLogin;
+export default ResetPassword;

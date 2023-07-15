@@ -46,19 +46,19 @@ const EmailLogin = () => {
             <span className={styles.otpmsg}>Enter your 6-digit code</span>
             </div>
             <div style={{}}>
-            <span>We’ve sent your OTP code to your email address</span>
+            <span>We’ve sent your OTP code to the phone number ending XXXXXXX804</span>
             </div>
             </div>
           
           <Form noValidate >
             
           <Row className='mb-4' >
-      <Form.Group as={Col} md="2" controlId="validationCustomUsername" >
+      <Form.Group as={Col} md="2" className={styles.otpfield} controlId="validationCustomUsername" >
         
          
             <Form.Control
               type="text"
-              placeholder="0"
+              
               aria-describedby="inputGroupPrepend"
               required
               className={[styles.FormControl]}
@@ -67,12 +67,12 @@ const EmailLogin = () => {
             
  
         </Form.Group>
-        <Form.Group as={Col} md="2" controlId="validationCustomUsername" >
+        <Form.Group as={Col} md="2" className={styles.otpfield} controlId="validationCustomUsername" >
         
          
             <Form.Control
               type="text"
-              placeholder="0"
+            
               aria-describedby="inputGroupPrepend"
               required
               className={[styles.FormControl]}
@@ -81,12 +81,12 @@ const EmailLogin = () => {
             
  
         </Form.Group>
-        <Form.Group as={Col} md="2" controlId="validationCustomUsername" >
+        <Form.Group as={Col} md="2" className={styles.otpfield} controlId="validationCustomUsername" >
         
          
             <Form.Control
               type="text"
-              placeholder="0"
+              
               aria-describedby="inputGroupPrepend"
               required
               className={[styles.FormControl]}
@@ -95,12 +95,12 @@ const EmailLogin = () => {
             
  
         </Form.Group>
-        <Form.Group as={Col} md="2" controlId="validationCustomUsername" >
+        <Form.Group as={Col} md="2" className={styles.otpfield} controlId="validationCustomUsername" >
         
          
             <Form.Control
               type="text"
-              placeholder="0"
+              
               aria-describedby="inputGroupPrepend"
               required
               className={[styles.FormControl]}
@@ -109,12 +109,12 @@ const EmailLogin = () => {
             
  
         </Form.Group>
-        <Form.Group as={Col} md="2" controlId="validationCustomUsername" >
+        <Form.Group as={Col} md="2" className={styles.otpfield} controlId="validationCustomUsername" >
         
          
             <Form.Control
               type="text"
-              placeholder="0"
+              
               aria-describedby="inputGroupPrepend"
               required
               className={[styles.FormControl]}
@@ -123,12 +123,12 @@ const EmailLogin = () => {
             
  
         </Form.Group>
-        <Form.Group as={Col} md="2" controlId="validationCustomUsername" >
+        <Form.Group as={Col} md="2" className={styles.otpfield} controlId="validationCustomUsername" >
         
          
             <Form.Control
               type="text"
-              placeholder="0"
+             
               aria-describedby="inputGroupPrepend"
               required
               className={[styles.FormControl]}
@@ -142,7 +142,7 @@ const EmailLogin = () => {
 
     
       <div className={styles.formtext}>
-            <Link href='/forgotpassword/email'><span style={{ color: 'white' }}>Forgot Your Password?</span></Link>
+      <span style={{ color: 'white' }}>Didn’t Receive Code?</span><Link href='/forgotpassword/email'><span style={{ color: ' #DA3D26' }}> Resend</span></Link>
         </div>
 
         <div className={styles.submitbutton} >

@@ -48,7 +48,7 @@ const ForgotPasswordEmail = () => {
                     <Form noValidate >
 
                         <Row className='mb-4' >
-                            <Form.Group as={Col} md="12" controlId="validationCustomUsername" >
+                            <Form.Group as={Col} md="12"  controlId="validationCustomUsername" >
 
 
                                 <Form.Control
@@ -84,11 +84,12 @@ const ForgotPasswordEmail = () => {
                         </Row>
 
                         <div className={styles.submitbutton} >
-                            <Button type="submit"
-                                className={styles.passwordcontinue} >
-                                Continue
-                            </Button>
-
+                            <Link href='/forgotpassword/otp/email'>
+                                <Button type="submit"
+                                    className={styles.passwordcontinue} >
+                                    Continue
+                                </Button>
+                            </Link>
                         </div>
 
                     </Form>
