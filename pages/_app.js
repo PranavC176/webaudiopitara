@@ -2,7 +2,11 @@ import '@/styles/globals.css'
 import Head from 'next/head'
 import Script from 'next/script'
 import Navbar from '@/components/Navbar'
+import LogRocket from 'logrocket';
+import setupLogRocketReact from 'logrocket-react';
 
+// after calling LogRocket.init()
+// setupLogRocketReact(LogRocket);
 
 
 export default function App({ Component, pageProps }) {
@@ -18,6 +22,8 @@ export default function App({ Component, pageProps }) {
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossOrigin="anonymous"
       />
+      {/* <script src="https://cdn.lr-ingest.com/LogRocket.min.js" crossorigin="anonymous"></script> */}
+{/* <script>window.LogRocket && window.LogRocket.init('gnxchg/audio-pitara');</script> */}
       <Navbar/>
       
       <Component {...pageProps} />
