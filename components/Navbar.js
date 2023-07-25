@@ -8,6 +8,7 @@ const navbar = () => {
     <div className={styles.nav}>
         <Link href='/'>
         <img src='/logo.svg'></img>
+        <h2>Testing DevOps</h2>
         </Link>
     </div>
   )
