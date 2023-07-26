@@ -23,12 +23,6 @@ export default function App({ Component, pageProps }) {
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossOrigin="anonymous"
       />
-<<<<<<< HEAD
-=======
-      {/* <script src="https://cdn.lr-ingest.com/LogRocket.min.js" crossorigin="anonymous"></script> */}
-{/* <script>window.LogRocket && window.LogRocket.init('gnxchg/audio-pitara');</script> */}
-      <Navbar/>
->>>>>>> 985e8b5df5dd6264002b8ac7f79b57a5088b9014
       
         
       
