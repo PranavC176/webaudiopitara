@@ -9,7 +9,8 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
+import { toast } from 'react-toastify';
+import Nav from '@/components/Nav';
 
 const Signup2 = () => {
 
@@ -22,6 +23,7 @@ const Signup2 = () => {
         if (form.checkValidity() === false) {
 
             event.stopPropagation();
+            toast.error("All fields are mandatory to fill");
         }
         else {
             alert({ 'message': 'hello' })
@@ -33,7 +35,7 @@ const Signup2 = () => {
         <>
             <Head>
             </Head>
-
+            <Nav/>
             <div className={styles.signup2main}>
                 <div className={styles.signup2form}>
                     <div className={styles.signup2head}>
@@ -101,12 +103,13 @@ const Signup2 = () => {
                                         placeholder="Date Of Birth"
                                         aria-describedby="inputGroupPrepend"
                                         required
+                                        pattern="\d{1,2}/\d{1,2}/\d{2}"
                                         className={styles.FormControl}
                                         style={{ borderRadius: '6px !important', padding: '7px 20px 7px 20px !important', textTransform: 'uppercase' }}
                                     />
-                                    <Form.Control.Feedback type="invalid">
+                                    {/* <Form.Control.Feedback type="invalid">
                                         Please Enter Date of birth.
-                                    </Form.Control.Feedback>
+                                    </Form.Control.Feedback> */}
 
                                 </Form.Group>
                             </Row>
@@ -115,7 +118,7 @@ const Signup2 = () => {
                             <Row className='mb-4'>
 
                                 <Form.Label className={styles.formlabel}>What’s your gender?</Form.Label>
-                                <Form.Group className="mb-3" as={Col} md="6" >
+                                <Form.Group className="mb-3" as={Col} md="6"  controlId="validationCustomUsername" >
                                     <Form.Check
                                         required
                                         type='radio'
@@ -127,7 +130,7 @@ const Signup2 = () => {
 
                                 </Form.Group>
 
-                                <Form.Group className="mb-3" as={Col} md="6">
+                                <Form.Group className="mb-3" as={Col} md="6"  controlId="validationCustomUsername" >
                                     <Form.Check
 
                                         required

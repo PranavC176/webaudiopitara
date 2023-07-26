@@ -1,6 +1,75 @@
 .nav {
-  padding-top: 25px;
   padding-left: 35px;
-  position: absolute;
+  /* padding-top: 20PX;
+  position: absolute; */
 }
 
+.main {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.26);
+  backdrop-filter: blur(10px);
+  display: inline-flex;
+  align-items: center;
+  gap: 135px;
+  height:90px;
+}
+
+.searchbar {
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.19);
+  padding: 10px 40px 10px 50px;
+  border: none;
+  background-image: url('/search.svg');
+  background-repeat: no-repeat;
+  background-position: left 15px center !important;
+  width: 508px;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.homebutton {
+  background-image: url('/home.svg');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 30px;
+}
+
+.librarybutton {
+  background-image: url('/library.svg');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 30px;
+}
+
+.coins {
+  background: url('/Audiopitaracoin.png');
+  background-repeat: no-repeat;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 8px 15px 8px 50px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.19);
+  background-position: left 15px center !important;
+}

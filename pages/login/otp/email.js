@@ -8,6 +8,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import Head from 'next/head';
 import Link from 'next/link';
+import Nav from '@/components/Nav';
 
 
 
@@ -20,7 +21,7 @@ const EmailLogin = () => {
       <Head>
 
       </Head>
-
+      <Nav/>
       <div className={styles.loginmain}>
         <div className={styles.loginform}>
           <div className={styles.loginhead}>

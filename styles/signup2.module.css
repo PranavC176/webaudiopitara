@@ -166,7 +166,7 @@
   font-size: 20px !important;
   margin-left: 0px !important;
   text-align: left;
-  border-color: rgba(193, 190, 190, 0.33) !important;
+  border-color: rgba(193, 190, 190, 0.33);
   
 }
 
@@ -199,13 +199,13 @@
   width:20% !important;
 }
 
-.FormControl:invalid {
+/* .FormControl:invalid {
   border-color: rgba(193, 190, 190, 0.33) !important;
 }
 
 .FormControl:valid {
   border-color: rgba(193, 190, 190, 0.33) !important;
-}
+} */
 
 
 .submitbutton {
@@ -248,7 +248,7 @@
   font-size: 20px !important;
   margin-left: 0px !important;
   text-align: left;
-  border: 1px solid rgba(193, 190, 190, 0.33) !important;
+  border: 1px solid rgba(193, 190, 190, 0.33);
 }
 
 

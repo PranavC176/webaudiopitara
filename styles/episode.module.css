@@ -1,0 +1,437 @@
+.homepagemain {
+    width: 100%;
+    /* background-color: black;
+    background-image: url('/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.main {
+    background-color: black;
+    background-image: url('/Background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.one:focus {
+    background-color: brown;
+}
+
+.two:focus {
+    background-color: rgb(42, 165, 71);
+}
+
+.episodeleft {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 20px 100px;
+
+}
+
+.showhead {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.showimage {
+    width: 434px;
+    height: 434px;
+    border-radius: 10px;
+    /* background: url('/episode1.png');
+background-size: cover;
+background-repeat: no-repeat; */
+    box-shadow: 0px 0px 15px 19px rgba(151, 71, 255, 0.10);
+}
+
+
+.showheadicons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 38px;
+    width: 38px;
+}
+
+.sideicons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.episdoename p {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+
+}
+
+.episodebottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+    width: 434px;
+    justify-content: center;
+}
+
+
+.episodebottom span {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.episodebottom div {
+    display: flex;
+    align-items: center;
+    background: rgba(189, 183, 183, 0.12);
+    padding: 5px 10px;
+}
+
+.episodebottom div:nth-child(1) {
+    padding: 8px 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.episodebottom div:nth-child(3) {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.epiPath span {
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.epiPath {
+    display: flex;
+    gap: 5px;
+    padding: 20px 40px;
+}
+
+.episoderight {
+    padding: 10px 40px;
+}
+
+.rightButtons {
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.Details {
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 14px 10px 0px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    /* background: var(--dark-button-bg, linear-gradient(132deg, #010243 0%, #01025C 100%)); */
+
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+.AllEpisode {
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 14px 10px 0px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    /* background: var(--dark-button-bg, linear-gradient(132deg, #010243 0%, #01025C 100%)); */
+
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Related {
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 14px 10px 0px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    /* background: var(--dark-button-bg, linear-gradient(132deg, #010243 0%, #01025C 100%)); */
+
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Related:focus {
+    background: aqua !important;
+}
+
+.DetailsData {
+    padding: 20px;
+}
+
+.Data {
+    width: 710px;
+    height: 540px;
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    border-top: 2px solid #DA3D26;
+    background: var(--dark-button-bg, linear-gradient(132deg, #010243 0%, #01025C 100%));
+}
+
+.showdetails {
+    margin-top: 20px;
+    display: inline-flex;
+    background-color: black;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.showdetails p {
+    margin-bottom: 0px;
+}
+
+.details {
+    padding: 5px 30px;
+    color: white;
+}
+
+.showdetails p:nth-child(1) {
+    color: #D9D9D9;
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.showdetails p:nth-child(2) {
+    color: #D9D9D9;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about {
+    color: #FFF;
+
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.aboutdata {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Credits {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 35px;
+}
+
+.artist p:nth-child(1) {
+    margin-bottom: 0px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.artist p:nth-child(2) {
+    margin-bottom: 0px;
+    color: #9D9D9D;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.allepisode {
+    padding: 20px;
+    height: 538px;
+    overflow-y: scroll;
+}
+
+.episodesmain {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.episodes {
+    display: inline-flex;
+    gap: 29px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.19);
+    padding: 8px 25px 8px 10px;
+}
+
+.episodedetails {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.episodedetails span:nth-child(1) {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.episodedetails span:nth-child(2) {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.timediv span {
+    color: #D9D9D9 !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.timediv {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.allepisode::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.showinfo p {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.userinfo p {
+    margin-bottom: 0px;
+    padding-left: 20px;
+    color: white;
+}
+
+.userinfo p {
+    color: #F3F3F3;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.userinfo .showinfo {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.slide .react-multiple-carousel__arrow--right {
+    right: 100px;
+}
+
+.react-multiple-carousel__arrow--left {
+    left: calc(41% + 1px);
+}
+
+.topP {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 20px;
+}
+
+.chat {
+    border-radius: 20px;
+    background: #DA3D26;
+    display: inline-flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}

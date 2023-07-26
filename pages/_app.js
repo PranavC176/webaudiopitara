@@ -2,10 +2,13 @@ import '@/styles/globals.css'
 import Head from 'next/head'
 import Script from 'next/script'
 import Navbar from '@/components/Navbar'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer} from 'react-toastify';
 
 
 
 export default function App({ Component, pageProps }) {
+ 
   return (
     <>
       <Head>
@@ -18,9 +21,13 @@ export default function App({ Component, pageProps }) {
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossOrigin="anonymous"
       />
-      <Navbar/>
       
+        
+      
+     
+     
       <Component {...pageProps} />
+      <ToastContainer/>
 
     </>
   )

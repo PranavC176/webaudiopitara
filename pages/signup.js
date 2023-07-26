@@ -10,10 +10,14 @@ import Row from 'react-bootstrap/Row';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { toast } from 'react-toastify';
+import Nav from '@/components/Nav';
 
 
 const Signup = () => {
   const [validated, setValidated] = useState(false);
+  
+
+  
   const router = useRouter();
 
   const handleSubmit = (event) => {
@@ -23,20 +27,24 @@ const Signup = () => {
     if (form.checkValidity() === false) {
       
       event.stopPropagation();
-      
+      toast.error("All fields are mandatory to fill");
+     
     }
     else{
       router.push('/signup2');
+     
     }
     setValidated(true); 
   };
+
+
   
   return (
     <>
       <Head>
       
       </Head>
-
+      <Nav/>
       <div className={styles.signupmain}>
         <div className={styles.signupform}>
           <div className={styles.signuphead}>
@@ -130,10 +138,10 @@ const Signup = () => {
             className={styles.FormControl}
           />
           {/* <span>First name</span> */}
-          <Form.Control.Feedback type="invalid">
+          {/* <Form.Control.Feedback type="invalid">
               Please Enter First Name.
             </Form.Control.Feedback>
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback> */}
         </Form.Group>
         <Form.Group as={Col} md="6" controlId="validationCustom02" className={styles.inputwrapper}>
           <Form.Control
@@ -143,10 +151,10 @@ const Signup = () => {
             className={styles.FormControl}
           />
           {/* <span>Last Name</span> */}
-          <Form.Control.Feedback type="invalid">
+          {/* <Form.Control.Feedback type="invalid">
               Please Enter Last Name.
             </Form.Control.Feedback>
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback> */}
         </Form.Group>
         
       </Row>
@@ -163,9 +171,9 @@ const Signup = () => {
               id="my-input"
             />
             {/* <span>Email</span> */}
-            <Form.Control.Feedback type="invalid">
+            {/* <Form.Control.Feedback type="invalid">
               Please Enter Email (example@gmail.com).
-            </Form.Control.Feedback>
+            </Form.Control.Feedback> */}
           
         </Form.Group>
       </Row>
@@ -195,9 +203,9 @@ const Signup = () => {
              
             />
             {/* <span>Phone Number</span> */}
-            <Form.Control.Feedback type="invalid">
+            {/* <Form.Control.Feedback type="invalid">
               Please Enter a Phone Number.
-            </Form.Control.Feedback>
+            </Form.Control.Feedback> */}
           </InputGroup>
         </Form.Group>
       </Row>
@@ -214,10 +222,10 @@ const Signup = () => {
             
             />
             {/* <span>Password</span> */}
-            <Form.Control.Feedback type="invalid">
+            {/* <Form.Control.Feedback type="invalid">
               Please Enter Password
             </Form.Control.Feedback>
-          
+           */}
         </Form.Group>
       </Row>
       <Row >
@@ -233,9 +241,9 @@ const Signup = () => {
             
             />
             {/* <span>Password</span> */}
-            <Form.Control.Feedback type="invalid">
+            {/* <Form.Control.Feedback type="invalid">
               Please Enter Password
-            </Form.Control.Feedback>
+            </Form.Control.Feedback> */}
           
         </Form.Group>
       </Row>

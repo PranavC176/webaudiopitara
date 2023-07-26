@@ -93,10 +93,11 @@ body {
 }
 
 body {
-  background-color: black;
-  background-image: url('/BackgroundWeb.png');
+  background-color: black; 
   background-repeat: no-repeat;
   background-size:cover;
+  background-image: url('/Background.png');
+  background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif !important;
   
 }
@@ -111,3 +112,77 @@ a {
     color-scheme: dark;
   }
 }
+
+.react-multiple-carousel__arrow--left {
+  left: calc(91% + 1px) !important;
+}
+
+.slide .react-multiple-carousel__arrow--left {
+  left: calc(70% + 1px) !important;
+
+}
+
+.slide .react-multiple-carousel__arrow--right {
+  right: 100px !important;
+}
+
+
+
+.react-multiple-carousel__arrow--right {
+  right: 20px !important;
+}
+
+.react-multiple-carousel__arrow {
+  top:0px !important;
+  z-index: 20 !important;
+}
+
+.react-multi-carousel-dot button {
+
+  border-color: #80808078 !important;
+  background-color: #80808000 !important;
+}
+
+.react-multi-carousel-dot--active button{
+ 
+  background: #ffffffcd !important;
+}
+
+/* .react-multi-carousel-list .react-multiple-carousel__arrow button:focus {
+  outline:solid rgb(255, 255, 255) 1px !important;
+ 
+} */
+.rhap_repeat-button {
+  display: none;
+}
+
+.rhap_volume-controls {
+  display: none;
+}
+
+.rhap_total-time{
+  display: none;
+}
+.rhap_main{
+  display: flex !important;
+  align-items: baseline;
+ 
+  gap:5px;
+}
+
+.rhap_main-controls-button:focus{
+ outline: none !important;
+  }
+  
+.rhap_main-controls-button{
+background-color: transparent;
+border:none;
+font-size: 30px;
+}
+
+.rhap_current-time{
+  color:white;
+  margin-bottom: 0px;
+}
+
+

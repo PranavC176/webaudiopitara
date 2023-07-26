@@ -16,7 +16,7 @@
   gap: 20px;
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.31);
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
 
 .signuphead {
@@ -163,7 +163,7 @@
   font-size: 20px !important;
   margin-left: 0px !important;
   text-align: left;
-  border-color: rgba(193, 190, 190, 0.33) !important;
+  border-color: rgba(193, 190, 190, 0.33);
   
 }
 
@@ -191,7 +191,7 @@ padding:7px 10px 7px 15px !important ;
 }
 .emailfield{
   border-radius:0px 6px 6px 0px !important;
-  border-left:none;
+
   padding:7px 0px 7px 5px !important;
 }
 
@@ -214,19 +214,19 @@ padding:7px 10px 7px 15px !important ;
   box-shadow: none !important;
 }
 
-.FormControl:invalid{
+/* .FormControl:invalid{
   border-color: rgba(193, 190, 190, 0.33) !important;
 }
 .FormControl:valid{
   border-color: rgba(193, 190, 190, 0.33) !important;
-}
+} */
 
 .passwordfeild{
   background-image: url('/password.svg') !important;
   background-repeat: no-repeat !important;
   background-size: cover;
   background-position: left 20px center !important;
-  border-color: rgba(193, 190, 190, 0.33) !important;
+  border-color: rgba(193, 190, 190, 0.33);
   padding:12px 10px 12px  60px!important;
 }
 
@@ -235,7 +235,7 @@ padding:7px 10px 7px 15px !important ;
   background-repeat: no-repeat !important;
   background-size: cover;
   background-position: left 20px center !important;
-  border-color: rgba(193, 190, 190, 0.33) !important;
+  border-color: rgba(193, 190, 190, 0.33);
   padding:12px 10px 12px  60px!important;
 }
 

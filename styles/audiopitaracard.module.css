@@ -1,0 +1,50 @@
+.main{
+    padding: 10px 20px 20px 20px;
+    
+}
+.container {
+    /* backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125)); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    position: relative;
+    height:217px;
+  }
+
+  .bannerimage {
+    height:auto;
+    width: 100%;
+    overflow:hidden;
+    position: absolute;
+  }
+
+  .bannerimage img{
+        width: 100%;
+        height: 217px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        
+  }
+  .banneraudio{
+position: absolute;
+bottom: 15px;
+right:10px;
+display: none;
+  }
+
+  .banneraudio:hover{
+    display: block;
+  }
+
+  .banneraudio audio{ 
+    color:aqua !important;
+  }
+
+  
