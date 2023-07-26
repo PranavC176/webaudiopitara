@@ -1,0 +1,21 @@
+steps:
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/audio-pitara-app/a2f5595bce5a', '.']
+# Push the image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/audio-pitara-app/a2f5595bce5a']
+# Deploy image to Cloud Run
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'run'
+  - 'deploy'
+  - 'cloud-run-ap'
+  - '--image'
+  - 'gcr.io/audio-pitara-app/a2f5595bce5a'
+  - '--region'
+  - 'asia-south1'
+  - '--platform'
+  - 'managed'
+images:
+- gcr.io/audio-pitara-app/a2f5595bce5a
